@@ -25,7 +25,7 @@ const NewBlog = () => {
         try {
             const token =sessionStorage.getItem('userToken')
             if(token){
-                const response = await axios.post('http://localhost:3000/post/addpost',
+                const response = await axios.post('https://entri-news-movie-server.onrender.com/post/addpost',
                     formData,
                 {headers:{
                     "Content-Type":"multipart/form-data",

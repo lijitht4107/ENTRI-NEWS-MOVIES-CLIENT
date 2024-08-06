@@ -8,7 +8,7 @@ const Blogs = () => {
     useEffect(()=>{
         const fetchData = async (req,res)=>{
             try {
-                const posts = await axios.get('http://localhost:3000/post/getposts')
+                const posts = await axios.get('https://entri-news-movie-server.onrender.com/post/getposts')
                 setPosts(posts.data)
             } catch (error) {
                 console.log(error);
@@ -24,7 +24,7 @@ const Blogs = () => {
             
             <img className='blogImage'
             key={index}
-            src={`http://localhost:3000/${post.image}`}>
+            src={`https://entri-news-movie-server.onrender.com/${post.image}`}>
             </img>
             <h3>{post.title}</h3>
             <p>{post.subtitle}</p>

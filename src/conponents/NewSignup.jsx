@@ -11,7 +11,7 @@ const NewSignup = () => {
     const onSubmit = async (data) => {
       try {
         
-        const response = await axios.post('http://localhost:3000/users/addUser', data);
+        const response = await axios.post('https://entri-news-movie-server.onrender.com/users/addUser', data);
         console.log('Success:', response.data);
         if(response.data.message === "signup successfull"){
           navigate('/login')

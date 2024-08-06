@@ -9,7 +9,7 @@ const logForm = () => {
     const { register, handleSubmit, formState:{errors}} = useForm();
     // const onSubmit = data => console.log(data);
     const onSubmit= async(data)=>{
-      const response = await axios.post('http://localhost:3000/users/login',data)
+      const response = await axios.post('https://entri-news-movie-server.onrender.com/users/login',data)
       sessionStorage.setItem('userToken',response.data.token)
       if(response.data.message === 'Login successfull'){
           navigate('/')

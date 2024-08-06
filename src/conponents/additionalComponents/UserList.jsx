@@ -7,7 +7,7 @@ const UserList = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/users');
+                const response = await axios.get('https://entri-news-movie-server.onrender.com/users');
                 if (Array.isArray(response.data)) {
                     setUserList(response.data);
                 } else {
