@@ -1,5 +1,5 @@
 import React from 'react'
-import {useForm} from 'react-hook-form'
+import {useForm} from 'react-router-dom'
 import './NewSignup.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
