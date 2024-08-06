@@ -1,0 +1,22 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 2%;
+
+}
+.blogImage{
+    width: 200px;
+    border-radius: 10px;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.blogs:hover{
+    cursor: pointer;
+}
+.blogs:active{
+    color: mediumorchid;
+}

@@ -1,0 +1,16 @@
+.navbar-blogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: rgb(184, 200, 195);
+    padding: 10px;
+    font-family:'Inter', sans-serif;
+    
+}
+.nav-items{
+    text-decoration: none;
+    color: rgb(53, 49, 49);
+    font-size: 20px;
+
+}
